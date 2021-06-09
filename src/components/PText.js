@@ -6,7 +6,7 @@ const PStyle = Constants.PStyle;
 
 export default function PText({children}) {
     return (
-        <PStyle>
+        <PStyle className="para">
             <p>{children}</p>
         </PStyle>
     )
