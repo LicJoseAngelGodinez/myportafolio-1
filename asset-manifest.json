@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.js": "/react-portfolio/static/js/main.232b1a33.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.232b1a33.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.57e8639d.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.57e8639d.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.e530417f.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e530417f.js.map",
-    "static/js/2.a1e8b111.chunk.js": "/react-portfolio/static/js/2.a1e8b111.chunk.js",
-    "static/js/2.a1e8b111.chunk.js.map": "/react-portfolio/static/js/2.a1e8b111.chunk.js.map",
+    "static/js/2.40c662ba.chunk.js": "/react-portfolio/static/js/2.40c662ba.chunk.js",
+    "static/js/2.40c662ba.chunk.js.map": "/react-portfolio/static/js/2.40c662ba.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/js/2.a1e8b111.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.a1e8b111.chunk.js.LICENSE.txt",
+    "static/js/2.40c662ba.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.40c662ba.chunk.js.LICENSE.txt",
     "static/media/Montserrat-Bold.079ca05d.ttf": "/react-portfolio/static/media/Montserrat-Bold.079ca05d.ttf",
     "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/react-portfolio/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/react-portfolio/static/media/RobotoMono-Regular.418a8f9f.ttf",
+    "static/media/about-sec-img.dc869837.png": "/react-portfolio/static/media/about-sec-img.dc869837.png",
     "static/media/me-dark.0dd06077.webp": "/react-portfolio/static/media/me-dark.0dd06077.webp",
     "static/media/scroll-down-arrow.b013ca45.svg": "/react-portfolio/static/media/scroll-down-arrow.b013ca45.svg",
     "static/media/social-media-arrow.f5e093ce.svg": "/react-portfolio/static/media/social-media-arrow.f5e093ce.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e530417f.js",
-    "static/js/2.a1e8b111.chunk.js",
-    "static/js/main.232b1a33.chunk.js"
+    "static/js/2.40c662ba.chunk.js",
+    "static/js/main.57e8639d.chunk.js"
   ]
 }
