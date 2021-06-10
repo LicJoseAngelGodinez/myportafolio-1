@@ -360,3 +360,44 @@ export const AboutSectionStyle = styled.div`
         }
     }
 `;
+
+/*
+ * Service Items
+ */
+export const ServiceItemStyles = styled.div`
+    padding: 10rem 0;
+    .services__allItems{
+        display: flex;
+        gap: 10rem;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+    @media only screen and (max-width: 768px){
+        .services__allItems{
+            flex-direction: column;
+            max-width: 350px;
+            margin: 0 auto;
+            margin-top: 5rem;
+            gap: 5rem;
+        }
+    }
+`;
+
+/*
+ * Items
+ */
+export const ItemStyles = styled.div`
+    text-align: center;
+    .servicesItem__icon{
+        svg{
+            width: 3rem;
+        }
+    }
+    .servicesItem__title{
+        font-size: 2.4rem;
+        font-family: "Montserrat Semibold";
+    }
+    .para{
+        margin-top: 2rem;
+    }
+`;
