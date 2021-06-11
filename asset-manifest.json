@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/react-portfolio/static/js/main.b76452f6.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.b76452f6.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.5ea48645.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.5ea48645.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.e530417f.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e530417f.js.map",
     "static/css/2.41ebb63b.chunk.css": "/react-portfolio/static/css/2.41ebb63b.chunk.css",
-    "static/js/2.6cfc66f4.chunk.js": "/react-portfolio/static/js/2.6cfc66f4.chunk.js",
-    "static/js/2.6cfc66f4.chunk.js.map": "/react-portfolio/static/js/2.6cfc66f4.chunk.js.map",
+    "static/js/2.011f2208.chunk.js": "/react-portfolio/static/js/2.011f2208.chunk.js",
+    "static/js/2.011f2208.chunk.js.map": "/react-portfolio/static/js/2.011f2208.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/2.41ebb63b.chunk.css.map": "/react-portfolio/static/css/2.41ebb63b.chunk.css.map",
-    "static/js/2.6cfc66f4.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.6cfc66f4.chunk.js.LICENSE.txt",
+    "static/js/2.011f2208.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.011f2208.chunk.js.LICENSE.txt",
     "static/media/Montserrat-Bold.079ca05d.ttf": "/react-portfolio/static/media/Montserrat-Bold.079ca05d.ttf",
     "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/react-portfolio/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/react-portfolio/static/media/RobotoMono-Regular.418a8f9f.ttf",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.e530417f.js",
     "static/css/2.41ebb63b.chunk.css",
-    "static/js/2.6cfc66f4.chunk.js",
-    "static/js/main.b76452f6.chunk.js"
+    "static/js/2.011f2208.chunk.js",
+    "static/js/main.5ea48645.chunk.js"
   ]
 }
