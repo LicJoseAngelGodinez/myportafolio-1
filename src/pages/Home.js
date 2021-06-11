@@ -5,6 +5,7 @@ import ServiceSection from '../components/ServiceSection';
 import ProjectsSection from '../components/ProjectsSection';
 import TestimonialSection from '../components/TestimonialSection';
 import ContactBanner from '../components/ContactBanner';
+import Footer from '../components/Footer';
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
             <ProjectsSection />
             <TestimonialSection />
             <ContactBanner />
+            <Footer />
         </div>
     )
 }
