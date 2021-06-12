@@ -4,42 +4,47 @@ import UTrackerImg from '../images/utracker.webp';
 import GreenCtgImg from '../images/greenctg.webp';
 import CoinTrackerImg from '../images/cointracker.webp';
 import CavinImg from '../images/cavinimg.webp';
+import SUImg from '../images/salesup.webp';
+import VMImg from '../images/vm.webp';
+import VMServicesImg from '../images/vm-back-services.webp';
+import VMPanelImg from '../images/vm-panel.webp';
+import VMOffersImg from '../images/vm-back-offers.webp';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
+    name: 'SalesUp!',
     desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+      'SalesUp!® el CRM en español usado por empresas en toda latinoamérica facilitas la interacción con tus clientes y mantienes el control de tus procesos',
+    img: SUImg,
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'Visit Mexico',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+      'Portal de cara al mundo presentando los estados, atractivos, destinos, rutas y actividades que puedes realizar en todo el terriorio mexicano.',
+    img: VMImg,
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
+    name: 'Proveedores de Servicios de VM',
     desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+      'Acceso a los proveedores de servicios de hotelería, aviación, viajes, tourismo, restaurantes y transportes mediante un formulario para poder ofertarse en el sitio de VisitMexico.',
+    img: VMServicesImg,
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
+    name: "CMS para VM",
     desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
+      'CMS diseñados para los manejos de contenidos de diferentes proyectos, entre ellos página principal de VisitMexico, Prestadores de servicios y Ofertas.',
+    img: VMPanelImg,
   },
   {
     id: uuidv4(),
-    name: 'Tracking Soft',
+    name: 'Ofertas en VM',
     desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+      'Registro rápido para landing de ofertas que se muestra en el sitio VisitMexico.',
+    img: VMOffersImg,
   },
 ];
 

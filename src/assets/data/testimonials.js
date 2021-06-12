@@ -33,6 +33,14 @@ const testimonials = [
   },
   {
     id: 5,
+    name: 'Hans Fischer',
+    title: 'QA Head',
+    org: 'Wizeline',
+    desc:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
+  },
+  {
+    id: 6,
     name: 'Dante Fernández',
     title: 'IT Lead',
     org: 'Globant',
