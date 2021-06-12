@@ -15,17 +15,17 @@ export default function FooterCol({
         {
             type: "Link",
             title: "Acerca de",
-            path: "/about"
+            path: "/acerca-de"
         },
         {
             type: "Link",
             title: "Proyectos",
-            path: "/projects"
+            path: "/proyectos"
         },
         {
             type: "Link",
             title: "Contactar",
-            path: "/contact"
+            path: "/contacto"
         }
     ]
 }) {

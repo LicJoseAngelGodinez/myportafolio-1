@@ -14,7 +14,7 @@ export default function HeroSection() {
             <div className="hero">
                 <div className="container">
                     <h1 className="hero__heading">
-                        <span>Hello this is </span>
+                        <span>Devskitchen México por </span>
                         <span className="hero__name">Ángel Godínez</span>
                     </h1>
                     <div className="hero__img">
@@ -22,7 +22,7 @@ export default function HeroSection() {
                     </div>
                     <div className="hero__info">
                         <PText>
-                            Trabajo como front-end developer/freelancer. Me encanta diseñar y crear experiencias web para las personas.
+                            Trabajo como front-end developer/freelancer. Me encanta diseñar y crear experiencias web para las personas y es mi deseo que Devskitchen-MX sea un sitio donde más desarroladores se unan para sumar conocimientos.
                         </PText>
                         <Button
                             btnLink="/projects"

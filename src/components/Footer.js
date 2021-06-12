@@ -14,12 +14,12 @@ export default function Footer() {
                         Ángel Godínez
                     </h1>
                     <PText>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, beatae molestias consequatur corporis reprehenderit optio culpa nemo vitae eos ipsum veritatis in rem. Iste, placeat nam natus magnam commodi blanditiis.
+                        Front End UIX Developer con más de 4 años de experiencia, autodidacta e interesado en seguir aprendiendo mejores técnicas de desarrollo y estructuras.
                     </PText>
                 </div>
                 <div className="footer__col2">
                     <FooterCol
-                        heading="Enlaces importantes"
+                        heading="Sitio"
                         links={
                             [
                                 {
@@ -30,17 +30,17 @@ export default function Footer() {
                                 {
                                     type: "Link",
                                     title: "Acerca de",
-                                    path: "/about"
+                                    path: "/acerca-de"
                                 },
                                 {
                                     type: "Link",
                                     title: "Proyectos",
-                                    path: "/projects"
+                                    path: "/proyectos"
                                 },
                                 {
                                     type: "Link",
                                     title: "Contactar",
-                                    path: "/contact"
+                                    path: "/contacto"
                                 }
                             ]
                         }
@@ -51,10 +51,6 @@ export default function Footer() {
                         heading="Información de contacto"
                         links={
                             [
-                                {
-                                    title: "9981891351",
-                                    path: "tel:+529981891351"
-                                },
                                 {
                                     title: "joseangel.godinez1989@gmail.com",
                                     path: "mailto:joseangel.godinez1989@gmail.com"
@@ -69,7 +65,7 @@ export default function Footer() {
                 </div>
                 <div className="footer__col4">
                     <FooterCol
-                        heading="Redes Sociales"
+                        heading="Social Media"
                         links={
                             [
                                 {
@@ -92,7 +88,7 @@ export default function Footer() {
             <div className="copyright">
                 <div className="container">
                     <PText>
-                    © 2021 - Ángel Godínez | Front End Developer
+                    © 2021 - Ángel Godínez | Front End UIX Dev.
                     </PText>
                 </div>
             </div>

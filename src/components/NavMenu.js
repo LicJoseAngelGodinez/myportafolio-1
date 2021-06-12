@@ -32,31 +32,31 @@ export default function NavMenu() {
                         role="button"
                         onKeyDown={()=> setShowNav(!showNav)}
                         tabIndex={0}
-                    >Home</NavLink>
+                    >Inicio</NavLink>
               </li>
               <li>
-                  <NavLink to="/about"
+                  <NavLink to="/acerca-de"
                         onClick={()=> setShowNav(!showNav)}
                         role="button"
                         onKeyDown={()=> setShowNav(!showNav)}
                         tabIndex={0}
-                  >About</NavLink>
+                  >Acerca de</NavLink>
               </li>
               <li>
-                  <NavLink to="/projects"
+                  <NavLink to="/proyectos"
                         onClick={()=> setShowNav(!showNav)}
                         role="button"
                         onKeyDown={()=> setShowNav(!showNav)}
                         tabIndex={0}
-                  >Projects</NavLink>
+                  >Proyectos</NavLink>
               </li>
               <li>
-                  <NavLink to="/contact"
+                  <NavLink to="/contacto"
                         onClick={()=> setShowNav(!showNav)}
                         role="button"
                         onKeyDown={()=> setShowNav(!showNav)}
                         tabIndex={0}
-                  >Contact</NavLink>
+                  >Contacto</NavLink>
               </li>
           </ul>
       </NavMenuStyles>

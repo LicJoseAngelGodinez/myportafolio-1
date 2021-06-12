@@ -18,7 +18,7 @@ export default function ContactBanner() {
                     </h3>
                     <Button
                         btnText="Contactar ahora"
-                        btnLink="/contact"
+                        btnLink="/contacto"
                         outline={false}
                     />
                 </div>

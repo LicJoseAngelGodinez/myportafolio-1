@@ -13,7 +13,7 @@ export default function ProjectItem({
     return (
         <ProjectItemStyles>
             <Link
-                to="/projects"
+                to="/proyectos"
                 className="projectItem__img"
             >
                 <img src={img} alt="project img" />

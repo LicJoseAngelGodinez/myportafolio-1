@@ -12,15 +12,15 @@ export default function App() {
       <Router>
         <NavMenu />
         <Switch>
-          <Route path="/about">
+          <Route path="/acerca-de">
             <About />
           </Route>
 
-          <Route path="/projects">
+          <Route path="/proyectos">
             <Projects />
           </Route>
 
-          <Route path="/contact">
+          <Route path="/contacto">
             <Contact />
           </Route>
 

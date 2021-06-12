@@ -1,27 +1,43 @@
 const testimonials = [
   {
     id: 1,
-    name: 'Shaif Arfan',
-    title: 'CEO',
-    org: 'WEB CIFAR',
+    name: 'Ernesto Pestaña',
+    title: 'Back End Manager Senior',
+    org: 'SalesUp!',
     desc:
-      'Ayan is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of designing.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
   },
   {
     id: 2,
-    name: 'Fahim Elahe',
-    title: 'Co-founder',
-    org: 'Kreetive',
+    name: 'Pedro Rogríguez',
+    title: 'CTO',
+    org: 'Braintivity',
     desc:
-      'Really amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing. Do really high-quality work.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
   },
   {
     id: 3,
-    name: 'Sayed',
-    title: 'Marketing Head',
-    org: 'Eleven Dawn',
+    name: 'Israel Camacho',
+    title: 'IT Hospitality Services Manager',
+    org: 'Karisma Hotels & Resorts',
     desc:
-      'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
+  },
+  {
+    id: 4,
+    name: 'Viridiana Nápoles',
+    title: 'QA Head',
+    org: 'Wizeline',
+    desc:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
+  },
+  {
+    id: 5,
+    name: 'Dante Fernández',
+    title: 'IT Lead',
+    org: 'Globant',
+    desc:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
   },
 ];
 export default testimonials;
