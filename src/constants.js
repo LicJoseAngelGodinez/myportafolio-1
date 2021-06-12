@@ -654,3 +654,109 @@ export const ColStyles = styled.div`
         font-size: 1.8rem;
     }
 `;
+
+/*
+ * About Page
+ */
+export const AboutPageStyles = styled.div`
+    padding: 20rem 0 10rem 0;
+    .top__section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .left{
+        flex: 3;
+    }
+    .right{
+        flex: 2;
+    }
+    .about__subheading{
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        span{
+            background-color: var(--deep-dark);
+            padding: 0.5rem;
+            border-radius: 8px;
+        }
+    }
+    .about__heading{
+        font-size: 3.6rem;
+        margin-bottom: 3rem;
+    }
+    .about__info{
+        margin-bottom: 4rem;
+        .para{
+            max-width: 100%;
+        }
+    }
+    .right{
+        img{
+            border: 2px solid var(--gray-1);
+        }
+    }    
+    .about__info__items{
+        margin-top: 15rem;
+    }
+    .about__info__item{
+        margin-bottom: 10rem;
+    }
+    .about__info__heading{
+        font-size: 3.6rem;
+        text-transform: uppercase;
+    }
+    @media only screen and (max-width: 768px){
+        padding: 10rem 0;
+        .top__section{
+            flex-direction: column;
+            gap: 5rem;
+        }
+        .about__subheading{
+            font-size: 1.8rem;
+        }
+        .about__heading{
+            font-size: 2.8rem;
+        }
+        .about__info__heading{
+            font-size: 3rem;
+        }
+    }
+`;
+
+/*
+ * About Item
+ */
+export const AboutItemStyle = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    position: relative;
+    .title{
+        font-size: 2.4rem;
+    }
+    .items{
+        display: flex;
+        gap: 1.5rem;
+        position: absolute;
+        left: 18rem;
+    }
+    .item{
+        background-color: var(--deep-dark);
+        padding: 1rem;
+        border-radius: 2px;
+    }
+    @media only screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        .items{
+            position: initial;
+            gap: 1rem;
+        }
+        .title{
+            font-size: 2rem;
+        }
+    }
+`;

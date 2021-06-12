@@ -7,7 +7,8 @@ const ButtonStyle = Constanst.ButtonStyle;
 export default function Button( {
     btnLink = "Test",
     btnText = "Test",
-    outline = false
+    outline = false,
+    btnTarget = false
 } ) {
     return (
         <ButtonStyle
@@ -15,7 +16,10 @@ export default function Button( {
             className="button__wrapper"
         >
             <Link className="button" 
-                to={btnLink}>
+                to={btnLink}
+                target={btnTarget ? "_blank" : "_self"}
+                rel="noreferrer"
+            >
                 {btnText}
             </Link>
         </ButtonStyle>

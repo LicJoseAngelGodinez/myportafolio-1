@@ -16,19 +16,19 @@ export default function ServiceSection() {
                 />
                 <div className="services__allItems">
                     <ServicesSectionItem 
-                        icon={<MdDesktopMac />}
-                        title="Diseño Web"
-                        desc="Realizo diseños  UI/UX para sitios que ayuden al sitio a tener un look único."
-                    />
-                    <ServicesSectionItem 
                         icon={<MdCode />}
                         title="Web Dev"
-                        desc="También desarrollo sitios. Creo sitios de alto rendimiento y gran velocidad"
+                        desc="Desarrollo sitios cuidando la UI/UX balancenado eficiencia, calidad y rapidez."
+                    />
+                    <ServicesSectionItem 
+                        icon={<MdDesktopMac />}
+                        title="Desktop Apps"
+                        desc="También cuento con equipo para el desarrollo de aplicaciones de escritorio"
                     />
                     <ServicesSectionItem 
                         icon={<MdPhonelinkSetup />}
                         title="App Dev"
-                        desc="Desarrollo aplicaciones móviles. Creo aplicaciones móviles con el ojo puesto en la UI."
+                        desc="Desarrollo aplicaciones móviles."
                     />
                 </div>
             </div>
