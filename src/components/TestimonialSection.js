@@ -53,7 +53,7 @@ export default function TestimonialSection() {
                                     {activeSlide.name}
                                 </h2>
                                 <p className="testimonial__title">
-                                    {activeSlide.title}, {activeSlide.org}
+                                    {activeSlide.title}{ !!(activeSlide.org) ? `, ${activeSlide.org}` : '' }
                                 </p>
                             </div>
                         </CSSTransition>
