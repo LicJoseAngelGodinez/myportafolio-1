@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.3ea05682.chunk.js",
-    "main.js.map": "/static/js/main.3ea05682.chunk.js.map",
+    "main.js": "/static/js/main.ec5ab77f.chunk.js",
+    "main.js.map": "/static/js/main.ec5ab77f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a28230b2.js",
     "runtime-main.js.map": "/static/js/runtime-main.a28230b2.js.map",
     "static/css/2.41ebb63b.chunk.css": "/static/css/2.41ebb63b.chunk.css",
@@ -19,14 +19,19 @@
     "static/media/greenctg.26fe03b1.webp": "/static/media/greenctg.26fe03b1.webp",
     "static/media/me-dark.0dd06077.webp": "/static/media/me-dark.0dd06077.webp",
     "static/media/projectImg.771236e1.png": "/static/media/projectImg.771236e1.png",
+    "static/media/salesup.a480fb17.webp": "/static/media/salesup.a480fb17.webp",
     "static/media/scroll-down-arrow.b013ca45.svg": "/static/media/scroll-down-arrow.b013ca45.svg",
     "static/media/social-media-arrow.f5e093ce.svg": "/static/media/social-media-arrow.f5e093ce.svg",
-    "static/media/utracker.271566bb.webp": "/static/media/utracker.271566bb.webp"
+    "static/media/utracker.271566bb.webp": "/static/media/utracker.271566bb.webp",
+    "static/media/vm-back-offers.e2e5497a.webp": "/static/media/vm-back-offers.e2e5497a.webp",
+    "static/media/vm-back-services.9acfe810.webp": "/static/media/vm-back-services.9acfe810.webp",
+    "static/media/vm-panel.e2f4e36e.webp": "/static/media/vm-panel.e2f4e36e.webp",
+    "static/media/vm.9cfc0f01.webp": "/static/media/vm.9cfc0f01.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.a28230b2.js",
     "static/css/2.41ebb63b.chunk.css",
     "static/js/2.a932232d.chunk.js",
-    "static/js/main.3ea05682.chunk.js"
+    "static/js/main.ec5ab77f.chunk.js"
   ]
 }
