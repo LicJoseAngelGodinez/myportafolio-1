@@ -25,7 +25,7 @@ export default function HeroSection() {
                             Trabajo como front-end developer/freelancer. Me encanta diseñar y crear experiencias web para las personas y es mi deseo que Devskitchen-MX sea un sitio donde más desarroladores se unan para sumar conocimientos.
                         </PText>
                         <Button
-                            btnLink="/projects"
+                            btnLink="/proyectos"
                             btnText="ver experiencia"
                             outline={false}
                         />
