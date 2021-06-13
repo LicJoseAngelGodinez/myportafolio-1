@@ -24,7 +24,7 @@ export default function Footer() {
                             [
                                 {
                                     type: "Link",
-                                    title: "Home",
+                                    title: "Inicio",
                                     path: "/"
                                 },
                                 {
