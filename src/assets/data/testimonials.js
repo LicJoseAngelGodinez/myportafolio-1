@@ -21,7 +21,7 @@ const testimonials = [
     title: 'IT Hospitality Services Manager',
     org: 'Karisma Hotels & Resorts',
     desc:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
+      'Como desarrollador profesional posee alto nivel en funcionalidades UI/UX. Siempre lo he considerado un miembro valioso del equipo a quien puedo confiar tareas importantes del negocio.',
   },
   {
     id: 4,
