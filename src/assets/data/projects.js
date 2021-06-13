@@ -17,6 +17,7 @@ const projects = [
     desc:
       'SalesUp!® el CRM en español usado por empresas en toda latinoamérica facilitas la interacción con tus clientes y mantienes el control de tus procesos',
     img: SUImg,
+    link: 'https://www.salesup.com/',
   },
   {
     id: uuidv4(),
@@ -24,6 +25,7 @@ const projects = [
     desc:
       'Portal de cara al mundo presentando los estados, atractivos, destinos, rutas y actividades que puedes realizar en todo el terriorio mexicano.',
     img: VMImg,
+    link: 'https://www.visitmexico.com/',
   },
   {
     id: uuidv4(),
@@ -31,6 +33,7 @@ const projects = [
     desc:
       'Acceso a los proveedores de servicios de hotelería, aviación, viajes, tourismo, restaurantes y transportes mediante un formulario para poder ofertarse en el sitio de VisitMexico.',
     img: VMServicesImg,
+    link: 'https://registro.visitmexico.com/',
   },
   {
     id: uuidv4(),
@@ -38,6 +41,7 @@ const projects = [
     desc:
       'CMS diseñados para los manejos de contenidos de diferentes proyectos, entre ellos página principal de VisitMexico, Prestadores de servicios y Ofertas.',
     img: VMPanelImg,
+    link: 'https://panel-servicios.visitmexico.com/',
   },
   {
     id: uuidv4(),
@@ -45,6 +49,7 @@ const projects = [
     desc:
       'Registro rápido para landing de ofertas que se muestra en el sitio VisitMexico.',
     img: VMOffersImg,
+    link: 'https://ofertas.visitmexico.com/',
   },
 ];
 

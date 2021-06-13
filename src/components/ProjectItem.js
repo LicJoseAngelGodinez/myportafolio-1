@@ -8,7 +8,8 @@ const ProjectItemStyles = Constants.ProjectItemStyles;
 export default function ProjectItem({
     img = projectImg,
     title = "Project Name",
-    desc = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    desc = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    prjLink = "#"
 }) {
     return (
         <ProjectItemStyles>
@@ -19,13 +20,15 @@ export default function ProjectItem({
                 <img src={img} alt="project img" />
             </Link>
             <div className="projectItem__info">
-                <Link
-                    to="#"
+                <a
+                    href={prjLink}
+                    target="_blank"
+                    rel="noreferrer"
                 >
                     <h3 className="projectItem__title">
                         {title}
                     </h3>
-                </Link>
+                </a>
                 <p className="projectItem__desc">
                     {desc}
                 </p>
