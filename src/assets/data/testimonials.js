@@ -13,7 +13,7 @@ const testimonials = [
     title: 'CTO',
     org: 'Braintivity',
     desc:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
+      'El Lic. Ángel es una persona auto didáctica,  tiene la capacidad para participar en las diferentes fases del desarrollo desde el planteamiento de los requerimientos, hasta la sección de pruebas y documentación. Es responsable y procura entregar sus actividades en tiempo y forma con un alto nivel de calidad.',
   },
   {
     id: 3,
