@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '../components/Buttons';
 import * as Constants from '../constants';
 import { db } from '../components/Firebase';
+import useToastContext from '../context/UseToastContext';
 
 const FormStyles = Constants.FormStyles;
 
@@ -11,6 +12,9 @@ export default function ContactForm() {
     const [message, setMessage] = useState('');
 
     const [loader, setLoader] = useState(false);
+
+    const [text, setText] = useState('');
+    const addToast = useToastContext();
 
     const handleSubmit = ( evt ) => {
         evt.preventDefault();
@@ -26,14 +30,20 @@ export default function ContactForm() {
         .add(params)
         .then( () => {
             setLoader(false);
+            handleClick('Mensaje enviado');
         })
         .catch( (error) => {
             setLoader(false);
+            handleClick('Intente de nuevo más tarde')
         });
 
         setName("");
         setEmail("");
         setMessage("");
+    };
+
+    function handleClick( text ) {
+        addToast(text);
     };
 
     return (
