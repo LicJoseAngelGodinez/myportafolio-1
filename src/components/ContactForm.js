@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../components/Buttons';
 import * as Constants from '../constants';
+import firebaseConf from '../components/Firebase';
 
 const FormStyles = Constants.FormStyles;
 
@@ -8,10 +9,34 @@ export default function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+
+    function handleSubmit ( evt ) {
+        console.log('ENTRO AL EVENTO');
+        evt.preventDefault();
+
+        const params = {
+            name: name,
+            email: email,
+            message: message,
+        };
+
+        firebaseConf.database().ref("formulario").push(params)
+        .then(() => {
+            alert('Enviado con éxito');
+        })
+        .catch( (error) => {
+            alert('No se pudo enviar')
+        });
+
+        setName("");
+        setEmail("");
+        setMessage("");
+    };
+
     return (
         <div>
             <FormStyles>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="name">Tu nombre
                             <input
@@ -19,8 +44,9 @@ export default function ContactForm() {
                                 id="name"
                                 name="name"
                                 value={name}
+                                maxLength="50"
                                 onChange={
-                                    evt => setName(evt.target.value)
+                                    (evt) => setName(evt.target.value)
                                 }    
                             />
                         </label>
@@ -32,8 +58,9 @@ export default function ContactForm() {
                                 id="email"
                                 name="email"
                                 value={email}
+                                maxLength="100"
                                 onChange={
-                                    evt => setEmail(evt.target.value)
+                                    (evt) => setEmail(evt.target.value)
                                 }    
                             />
                         </label>
@@ -46,15 +73,12 @@ export default function ContactForm() {
                                 name="message"
                                 value={message}
                                 onChange={
-                                    evt => setMessage(evt.target.value)
+                                    (evt) => setMessage(evt.target.value)
                                 }    
                             />
                         </label>
                     </div>
-                    <Button
-                        type="submit"
-                        btnText="Enviar"
-                    />
+                    <button type="submit" className="button">Enviar</button>
                 </form>
             </FormStyles>
         </div>

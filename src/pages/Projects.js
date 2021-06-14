@@ -38,14 +38,14 @@ export default function Projects() {
                     subheading="Donde he dejado huella"
                 />
                 <div className="projects__searchBar">
-                    <form >
+                    <div >
                         <input type="text"
                             value={searchText}
                             onChange={handleChange}
                             placeholder="Nombre de Proyecto"
                         />
                         <MdSearch className="searchIcon"/>
-                    </form>
+                    </div>
                 </div>
                 <div className="projects__allItems">
                     {projectData.map( item => (

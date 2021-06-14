@@ -8,9 +8,21 @@ export default function Button( {
     btnLink = "Test",
     btnText = "Test",
     outline = false,
-    btnTarget = false
+    btnTarget = false,
+    type = "button"
 } ) {
-    return (
+    return type === "submit" ? (
+        <ButtonStyle
+            outline={outline}
+            className="button__wrapper"
+        >
+            <button className="button" 
+                type={type}
+            >
+                {btnText}
+            </button>
+        </ButtonStyle>
+    ) : (
         <ButtonStyle
             outline={outline}
             className="button__wrapper"

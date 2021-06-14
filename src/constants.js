@@ -901,7 +901,7 @@ export const FormStyles = styled.form`
     }
     button[type="submit"]{
         background-color: var(--gray-1);
-        color: var(--block);
+        color: var(--black);
         font-size: 2rem;
         display: inline-block;        
         outline: none;
