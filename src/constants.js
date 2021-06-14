@@ -874,6 +874,9 @@ export const ContactItemStyles = styled.div`
     }
 `;
 
+/*
+ * Contact Form
+ */
 export const FormStyles = styled.form`
     width: 100%;
     .form-group{
@@ -908,6 +911,7 @@ export const FormStyles = styled.form`
         border: none;
         padding: 1rem 4rem;
         border-radius: 8px;
+        margin-top: 1rem;
         cursor: pointer;
     }
 `;

@@ -52,8 +52,8 @@ export default function Footer() {
                         links={
                             [
                                 {
-                                    title: "joseangel.godinez1989@gmail.com",
-                                    path: "mailto:joseangel.godinez1989@gmail.com"
+                                    title: "angel.devskitchen@gmail.com",
+                                    path: "mailto:angel.devskitchen@gmail.com"
                                 },
                                 {
                                     title: "Cancún, Quintana Roo, México",

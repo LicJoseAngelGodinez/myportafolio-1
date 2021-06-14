@@ -19,7 +19,7 @@ export default function ContactSection() {
                     <div className="left">
                         <ContactInfoItem
                             icon={<MdEmail />}
-                            text="joseangel.godinez1989@gmail.com"
+                            text="angel.devskitchen@gmail.com"
                         />
                         <ContactInfoItem
                             icon={<MdPlace />}

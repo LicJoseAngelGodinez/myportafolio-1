@@ -8,7 +8,7 @@ export default function SmoothScrollbar({
     const ref = useRef(null);
 
     return (
-        <ScrollBar ref={ref} damping=".09">
+        <ScrollBar ref={ref} damping={.09}>
             {children}
         </ScrollBar>
     );
