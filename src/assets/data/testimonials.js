@@ -26,10 +26,10 @@ const testimonials = [
   {
     id: 4,
     name: 'Viridiana Nápoles',
-    title: 'QA Head',
+    title: 'Software QA Engineer',
     org: 'Wizeline',
     desc:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
+      'Ángel es una persona comprometida con el trabajo y especialmente con el equipo. Es un profesional enfocado a los objetivos y siempre busca la manera de resolver los problemas, mediante el diálogo o trabajando en pareja para escuchar diferentes puntos de vista. Ha sido un placer trabajar a su lado ya que aprendí muchas cosas que el práctica como lo son, la escucha activa, la paciencia y empatía, que esto último son skills que destaco de él.',
   },
   {
     id: 5,
@@ -38,14 +38,6 @@ const testimonials = [
     org: 'Owltech',
     desc:
       'Como colaborador es dedicado y autodidacta, tuve la fortuna de trabajar con alguien que acepta los buenos y malos comentarios y saca lo mejor de sí para los proyectos',
-  },
-  {
-    id: 6,
-    name: 'Dante Fernández',
-    title: 'IT Lead',
-    org: 'Globant',
-    desc:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam cupiditate quidem voluptas tenetur laudantium? Aliquid odit ipsa animi nam. Saepe velit cumque obcaecati sed, impedit illo accusamus. Libero, iste qui!',
   },
 ];
 export default testimonials;
