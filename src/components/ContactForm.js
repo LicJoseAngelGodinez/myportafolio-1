@@ -3,6 +3,7 @@ import Button from '../components/Buttons';
 import * as Constants from '../constants';
 import { db } from '../components/Firebase';
 import useToastContext from '../context/UseToastContext';
+import { format } from 'date-fns';
 
 const FormStyles = Constants.FormStyles;
 
@@ -20,7 +21,12 @@ export default function ContactForm() {
         evt.preventDefault();
         setLoader(true);
 
+        let dateNow = new Date();
+
         const params = {
+            timeStamp: format(dateNow, 'dd/MM/yyyy kk:mm:ss'),
+            registerDate: format(dateNow, 'dd/MM/yyyy'),
+            registerHour: format(dateNow, 'kk:mm:ss'),
             name: name,
             email: email,
             message: message,
