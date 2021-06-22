@@ -7,10 +7,11 @@ const ContactItemStyles = Constants.ContactItemStyles;
 
 export default function ContactInfoItem({
     icon = <MdPlace />,
-    text = "this is an info"
+    text = "this is an info",
+    extraClass = ""
 }) {
     return (
-        <ContactItemStyles>
+        <ContactItemStyles className={extraClass}>
             <div className="icon">
                 {icon}
             </div>

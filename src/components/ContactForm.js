@@ -1,62 +1,129 @@
 import React, { useState } from 'react';
-import Button from '../components/Buttons';
 import * as Constants from '../constants';
 import { db } from '../components/Firebase';
-import useToastContext from '../context/UseToastContext';
 import { format } from 'date-fns';
+import ContactInfoItem from './ContactInfoItem';
+import { MdCheck, MdError, MdInfo, MdSend, MdTagFaces, MdWarning } from 'react-icons/md';
 
 const FormStyles = Constants.FormStyles;
+const ContactSectionStyle = Constants.ContactSectionStyle;
 
 export default function ContactForm() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [text, setText] = useState('');
+    const [extraClass, setExtraClass] = useState('');
+    const [icon, setIcon] = useState(<MdCheck />);
 
     const [loader, setLoader] = useState(false);
-
-    const [text, setText] = useState('');
-    const addToast = useToastContext();
+    const [showMsg, setShowMsg] = useState(false);
+    const [showForm, setShowForm] = useState(true);
 
     const handleSubmit = ( evt ) => {
         evt.preventDefault();
+        setText('Enviando mensaje');
+        setIcon(<MdSend />);
+        setExtraClass('contact__toast contact__info');
+        setShowMsg(true);
         setLoader(true);
+        setShowForm(false);
+        
+        if ( name != '' && email != '' && message != '' ) {
 
-        let dateNow = new Date();
+            setShowForm(false);
 
-        const params = {
-            timeStamp: format(dateNow, 'dd/MM/yyyy kk:mm:ss'),
-            registerDate: format(dateNow, 'dd/MM/yyyy'),
-            registerHour: format(dateNow, 'kk:mm:ss'),
-            name: name,
-            email: email,
-            message: message,
-        };
+            let dateNow = new Date();
 
-        db.collection('contactos')
-        .add(params)
-        .then( () => {
+            const params = {
+                timeStamp: format(dateNow, 'dd/MM/yyyy kk:mm:ss'),
+                registerDate: format(dateNow, 'dd/MM/yyyy'),
+                registerHour: format(dateNow, 'kk:mm:ss'),
+                name: name,
+                email: email,
+                message: message,
+            };
+
+            db.collection('contactos')
+            .add(params)
+            .then( () => {
+                setLoader(false);
+                setText('Mensaje enviado');
+                setShowMsg(true);
+                setIcon(<MdCheck />);
+                setExtraClass('contact__toast contact__success');
+                toggleElements(2, name);
+            })
+            .catch( (error) => {
+                setLoader(false);
+                setText('Ocurrió un error intentar más tarde');
+                setIcon(<MdError />);
+                setExtraClass('contact__toast contact__error');
+                setShowMsg(true);
+                toggleElements(1);
+            });
+    
+            setName("");
+            setEmail("");
+            setMessage("");
+
+        } else {
+            setText('Debe llenar todos los campos');
+            setIcon(<MdWarning />);
+            setExtraClass('contact__toast contact__warning');
             setLoader(false);
-            handleClick('Mensaje enviado');
-        })
-        .catch( (error) => {
-            setLoader(false);
-            handleClick('Intente de nuevo más tarde')
-        });
+            toggleElements(1);
+        }
 
-        setName("");
-        setEmail("");
-        setMessage("");
     };
+    
+    function toggleElements ( __case, __name ) {
 
-    function handleClick( text ) {
-        addToast(text);
+        let __showForm = false,
+            __showMsg = false,
+            __icon = <MdInfo />,
+            __class = '',
+            __text = '';
+
+        if ( __case === 1 ) {
+
+            __showForm = true;
+            __showMsg = false;
+            __icon = <MdInfo />;
+            __text = '';
+
+        } else if ( __case === 2 ) {
+
+            __showForm = false;
+            __showMsg = true;
+            __class = 'contact__toast contact__smile';
+            __icon = <MdTagFaces />;
+            __text = `Gracias ${__name}, por contactar!`;
+
+        }
+
+        setTimeout( function() {
+            setShowForm(__showForm);
+            setShowMsg(__showMsg);
+            setExtraClass(__class);
+            setIcon(__icon);
+            setText(__text);
+        }, 3000);
+
     };
 
     return (
         <div>
-            <FormStyles onSubmit={handleSubmit}>
+            <ContactSectionStyle className={ showMsg ? "" : "element__hidden"}>
+                <ContactInfoItem
+                    extraClass={ showMsg ? extraClass : "element__hidden"}
+                    icon={icon}
+                    text={text}
+                />
+            </ContactSectionStyle>
+            <FormStyles onSubmit={handleSubmit} className={ showForm ? "" : "element__hidden"}>
                 <div className="form-group">
-                    <label htmlFor="name">Tu nombre
+                    <label htmlFor="name">Nombre
                         <input
                             type="text"
                             id="name"
@@ -70,7 +137,7 @@ export default function ContactForm() {
                     </label>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="email">Tu correo
+                    <label htmlFor="email">Email
                         <input
                             type="text"
                             id="email"
@@ -84,7 +151,7 @@ export default function ContactForm() {
                     </label>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="message">Tu mensaje
+                    <label htmlFor="message">Mensaje
                         <textarea
                             type="text"
                             id="message"

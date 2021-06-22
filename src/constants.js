@@ -805,7 +805,45 @@ export const ProjectsStyles = styled.div`
  * Contact Section
  */
 export const ContactSectionStyle = styled.div`
-    padding: 10rem 0;
+    padding: 10rem 0;    
+    .element__hidden{
+        display: none;
+    }
+    .contact__warning{
+        background-color: var(--orange-1);
+        p{
+            color: var(--black);
+        }
+    }
+    .contact__error{
+        background-color: var(--red-1);
+        p{
+            color: var(--white);
+        }
+    }
+    .contact__info{
+        background-color: var(--blue-1);
+        p{
+            color: var(--white);
+        }
+    }
+    .contact__success{
+        background-color: var(--green-1);
+        p{
+            color: var(--black);
+        }
+    }
+    .contact__smile{
+        background-color: var(--yellow-1);
+        p{
+            color: var(--black);
+        }
+    }
+    .contact__toast, .contact__error, .contact__warning, .contact__info, .contact__success, .contact__smile{
+        p{
+            font-weight: bold;
+        }
+    }
     .contactSection__wrapper{
         display: flex;
         gap: 5rem;
@@ -879,6 +917,9 @@ export const ContactItemStyles = styled.div`
  */
 export const FormStyles = styled.form`
     width: 100%;
+    .element__hidden{
+        display: none;
+    }
     .form-group{
         width: 100%;
         margin-top: 2rem;

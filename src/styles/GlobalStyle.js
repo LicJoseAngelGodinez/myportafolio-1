@@ -13,6 +13,11 @@ const GlobalStyles = createGlobalStyle`
     --gray-2: #363636;
     --white : white;
     --black: black;
+    --orange-1: #e65100;
+    --red-1: #dd2c00;
+    --blue-1: #2979ff;
+    --green-1: #00e676;
+    --yellow-1: #ffeb3b;
   }
   html{
     font-size: 10px;
