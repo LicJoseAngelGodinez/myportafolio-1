@@ -3,7 +3,7 @@ import * as Constants from '../constants';
 import { db } from '../components/Firebase';
 import { format } from 'date-fns';
 import ContactInfoItem from './ContactInfoItem';
-import { MdCheck, MdError, MdInfo, MdSend, MdTagFaces, MdWarning } from 'react-icons/md';
+import { MdCheck, MdError, MdInfo, MdSend, MdTagFaces, MdWarning, MdMail } from 'react-icons/md';
 
 const FormStyles = Constants.FormStyles;
 const ContactSectionStyle = Constants.ContactSectionStyle;
@@ -32,6 +32,55 @@ export default function ContactForm() {
         if ( name != '' && email != '' && message != '' ) {
 
             setShowForm(false);
+
+            let __mensaje = '',
+                __icon = <MdError />,
+                __class = 'contact__toast  contact__error',
+                __isValid = true,
+                __case = 0;
+
+            if ( name.length > 50 || email.length > 100 ) {
+
+                if ( name.length > 50 && email.length > 50 ) {
+                    __mensaje = 'NOMBRE y CORREO exceden carácteres.';
+                    __case = 1;
+                } else if ( name.length > 50 ) {
+                    __mensaje = 'NOMBRE excede carácteres.';
+                    __case = 2;
+                } else {
+                    __mensaje = 'CORREO excede carácteres.';
+                    __case = 3;
+                }
+                __isValid = false;
+
+            } else if ( !validaMail(email) ) {
+                __mensaje = 'El correo no es válido.';
+                __icon = <MdMail />;
+                __case = 3;
+                __isValid = false;
+            }
+
+            if ( !(__isValid) ) {
+
+                setLoader(false);
+                setText(__mensaje);
+                setIcon(__icon);
+                setExtraClass(__class);
+                setShowMsg(true);
+                
+                if ( __case === 1 ) {
+                    setName("");
+                    setEmail("");
+                } else if ( __case === 2 ) {
+                    setName("");
+                } else if ( __case === 3 ) {
+                    setEmail("");
+                }
+                
+                toggleElements(1);
+
+                return;
+            }
 
             let dateNow = new Date();
 
@@ -111,6 +160,13 @@ export default function ContactForm() {
         }, 3000);
 
     };
+
+    function validaMail ( __mail ) {
+
+        let patron = new RegExp(/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/);
+
+	    return patron.test( __mail );
+    }
 
     return (
         <div>
