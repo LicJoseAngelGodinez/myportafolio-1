@@ -5,7 +5,7 @@ import Button from '../components/Buttons';
 import AboutImg from '../assets/images/about-sec-img.png';
 import * as Constants from '../constants';
 
-const AboutSectionStyle = Constants.AboutSectionStyle
+const AboutSectionStyle = Constants.AboutSectionStyle;
 
 export default function AboutSection() {
     return (
