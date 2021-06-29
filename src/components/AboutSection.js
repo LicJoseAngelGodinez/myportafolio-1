@@ -2,7 +2,7 @@ import React from 'react';
 import SectionTitle from '../components/SectionTitle';
 import PText from '../components/PText';
 import Button from '../components/Buttons';
-import AboutImg from '../assets/images/about-sec-img.png';
+import AboutImg from '../assets/images/about-sec-img.jpg';
 import * as Constants from '../constants';
 
 const AboutSectionStyle = Constants.AboutSectionStyle
