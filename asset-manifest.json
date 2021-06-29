@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.51206e92.chunk.js",
-    "main.js.map": "/static/js/main.51206e92.chunk.js.map",
+    "main.js": "/static/js/main.48615cd9.chunk.js",
+    "main.js.map": "/static/js/main.48615cd9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a28230b2.js",
     "runtime-main.js.map": "/static/js/runtime-main.a28230b2.js.map",
     "static/css/2.41ebb63b.chunk.css": "/static/css/2.41ebb63b.chunk.css",
@@ -14,7 +14,7 @@
     "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/static/media/RobotoMono-Regular.418a8f9f.ttf",
     "static/media/about-page-img.0a899799.webp": "/static/media/about-page-img.0a899799.webp",
-    "static/media/about-sec-img.dc869837.png": "/static/media/about-sec-img.dc869837.png",
+    "static/media/about-sec-img.073c75ec.jpg": "/static/media/about-sec-img.073c75ec.jpg",
     "static/media/cavinimg.606af066.webp": "/static/media/cavinimg.606af066.webp",
     "static/media/cointracker.561d016f.webp": "/static/media/cointracker.561d016f.webp",
     "static/media/cv-angel-godinez-esp.739c598c.pdf": "/static/media/cv-angel-godinez-esp.739c598c.pdf",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.a28230b2.js",
     "static/css/2.41ebb63b.chunk.css",
     "static/js/2.bf583026.chunk.js",
-    "static/js/main.51206e92.chunk.js"
+    "static/js/main.48615cd9.chunk.js"
   ]
 }
